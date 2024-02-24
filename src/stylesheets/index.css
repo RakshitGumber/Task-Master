@@ -1,4 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("./navbar.css");
+@import url("./animations.css");
+
 :root {
+  --accent1: #f54ea2;
+  --accent2: #ff7676;
+  font-family: "Lato", sans-serif;
+  background-color: whitesmoke;
+}
+
+* {
   margin: 0;
   padding: 0;
 }

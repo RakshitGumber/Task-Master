@@ -7,7 +7,60 @@
     <link rel="stylesheet" href="../src/stylesheets/index.css" />
   </head>
   <body>
-    Hello World!
+    <div class="container">
+      <nav class="main-nav">
+        <header class="main-header" title="Not Just Another To-Do List App">
+          <h1>Task Master</h1>
+        </header>
+        <form id="search">
+          <input type="text" placeholder="Search" id="search-box" />
+          <button id="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <button>
+              <i class="fa-solid fa-question"></i>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="setting-button">
+              <i class="fa-solid fa-gear" id="setting"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <nav class="secondary-nav">
+        <ul class="secondary-nav-list">
+          <li>
+            <label>Username:</label>
+            <span class="username-set">User</span>
+          </li>
+          <li>
+            <label for="color">Theme:</label>
+            <select name="color" id="color-selector">
+              <option value="red">Red</option>
+              <option value="yellow">Yellow</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+              <option value="purple">Purple</option>
+              <option value="black">Black</option>
+              <option value="grape">Grape</option>
+              <option value="emrald">Emrald</option>
+              <option value="violet">Violet</option>
+              <option value="marine">Marine</option>
+            </select>
+            <button id="change">save changes</button>
+          </li>
+          <li><button id="delete">Delete All</button></li>
+        </ul>
+      </nav>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/763dcc59d8.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="../src/scripts/controller.js"></script>
   </body>
 </html>
