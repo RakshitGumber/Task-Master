@@ -1,0 +1,118 @@
+.create-task {
+  padding-top: 20px;
+  padding: 20px;
+  padding-bottom: 0;
+  border-radius: 20px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: none;
+  z-index: 2;
+}
+
+.overlay {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 1;
+  display: none;
+}
+
+.close-addtask {
+  border: none;
+  border-radius: 50%;
+  padding: 4px 7px;
+  background: none;
+  color: gray;
+  transform: scale(1.3);
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+.close-addtask:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: whitesmoke;
+}
+
+.section-header {
+  color: var(--accent1);
+  font-size: 2rem;
+}
+
+.create-task form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: stretch;
+}
+
+.create-task form label {
+  padding-bottom: 5px;
+  padding-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent2);
+}
+
+.create-task form input {
+  padding: 15px;
+  margin-left: 10px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
+  color: gray;
+}
+
+.create-task form textarea {
+  padding: 15px;
+  margin-left: 10px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
+  color: gray;
+  resize: none;
+}
+
+.action-buttons {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.action-buttons button {
+  padding: 15px;
+  width: 50%;
+  background-color: var(--accent1);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.action-buttons button:hover {
+  filter: brightness(1.1);
+}
+
+.create-button {
+  border-radius: 15px 0px 0px 15px;
+}
+
+.reset-button {
+  border-radius: 0px 15px 15px 0px;
+}

@@ -1,0 +1,90 @@
+@import url("./checkbox.css");
+
+.main-section-header {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 3px solid var(--accent2);
+}
+
+.section-header {
+  margin-right: 20px;
+}
+
+.create-task-button {
+  border: none;
+  background: none;
+  margin-top: 5px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  color: var(--accent2);
+}
+
+.create-task-button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: whitesmoke;
+}
+
+.tasks {
+  overflow-y: scroll;
+  margin-top: 15px;
+  height: 650px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.task {
+  position: relative;
+  margin: 5px 15px;
+  height: 200px;
+  width: 280px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.task-check {
+  margin: 10px 2px;
+}
+
+.task-title {
+  padding-left: 5px;
+}
+
+.content {
+  padding: 10px;
+}
+
+.task-details {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  color: var(--accent2);
+}
+
+.task-options {
+  position: absolute;
+  top: 32px;
+  right: 20px;
+  display: none;
+}
+
+.task-options button {
+  margin-left: 8px;
+  font-size: 1.2rem;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  color: var(--accent1);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.task-options button:hover {
+  background-color: lightgray;
+}

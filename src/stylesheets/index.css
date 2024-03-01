@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @import url("./navbar.css");
 @import url("./animations.css");
+@import url("./create-task.css");
+@import url("./tasks.css");
+@import url("./scrollbar.css");
 
 :root {
   --accent1: #f54ea2;
@@ -12,4 +15,9 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+.workspace {
+  width: 80%;
+  margin: auto;
 }
