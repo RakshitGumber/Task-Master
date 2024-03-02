@@ -1,10 +1,10 @@
-const tasks = document.querySelector(".tasks");
+const tasksContainer = document.querySelector(".tasks");
 
 function renderTask(arr) {
   let taskString = "";
   arr.forEach((element) => {
     taskString += `
-        <article class="task">
+        <article class="task" data-task-id="${element.id}">
             <div class="task-check">
               <input type="checkbox" />
               <h2 class="task-title">${element.title}</h2>
@@ -13,20 +13,11 @@ function renderTask(arr) {
             <div class="task-details">
               <span>${element.time}</span>
             </div>
-            <div class="task-options">
-              <button class="edit-task">
-                <i class="fa-solid fa-pencil"></i>
-              </button>
-              <button class="delete-task">
-                <i class="fa-solid fa-trash"></i>
-              </button>
-            </div>
         </article>
     `;
   });
-  tasks.innerHTML = taskString;
+  tasksContainer.innerHTML = taskString;
 }
-
 function changeColor() {
   const cssRoot = document.querySelector(":root");
   const accentColors = {
@@ -44,4 +35,8 @@ function changeColor() {
   cssRoot.style.setProperty("--accent1", accentColors[colorSelector.value][0]);
   cssRoot.style.setProperty("--accent2", accentColors[colorSelector.value][1]);
   changeButton.style.display = "none";
+}
+
+function clearTasks() {
+  tasksContainer.innerHTML = ""; // Assuming tasksContainer is the parent container for tasks
 }
